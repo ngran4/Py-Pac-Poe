@@ -41,14 +41,6 @@ def init_game():
       print("Bogus move! Please try again... \nPlayer " + turn + "'s Move (example b2):")
       continue
 
-    # if the_board[move] == ' ':
-    #   the_board[move] = turn
-    #   count_turns += 1
-    # else:
-    #   print("Bogus move! Please try again... \nPlayer " + turn + "'s Move (example b2):").upper()
-    #   continue
-
-
     # Check for wins (must be over 5 moves)
     if count_turns >= 5:
       # check across 1
@@ -105,17 +97,3 @@ def init_game():
 
 if start_game == 'start':
   init_game()
-
-
-
-# keys_filled = []
-
-# for key in the_board:
-#   keys_filled.append(key)
-
-# replay = input("Play again? (yes/no)").lower()
-#   if replay == 'yes':
-#     for key in keys_filled:
-#       the_board[key] = ' '
-
-#     init_game()
