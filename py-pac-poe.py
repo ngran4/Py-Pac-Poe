@@ -5,7 +5,7 @@ if __name__ == "__main__":
   Let's play Py-Pac-Poe!
   ----------------------''')
 
-start_game = input('Enter start to begin game:').lower()
+start_game = input('Enter start to begin game: ').lower()
 
 
 the_board = {'A': 'A', 'B': 'B', 'C': 'C',
@@ -29,9 +29,8 @@ def init_game():
 
   for i in range(9):
     draw_board(the_board)
-    print("Player " + turn + "'s Move (example B2):")
 
-    move = input().upper()
+    move = input("Player " + turn + "'s Move (example B2): ").upper()
 
     # Check for valid move (RegEx)
     if the_board[move] != r'(/[A-C][1-3]\d?/)':
